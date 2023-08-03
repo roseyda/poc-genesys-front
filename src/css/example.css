@@ -1,0 +1,140 @@
+.softphone {
+  width: 100%;
+  height: 500px;
+  border: none;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.softphoneOpened {
+  max-height: 500px;
+}
+
+.content {
+  width: calc(100% - 220px);
+}
+
+.actions {
+  margin: 10px;
+}
+
+.action {
+  margin: 10px;
+}
+
+.action > p {
+  margin-top: -15px;
+}
+
+.actionName {
+  text-decoration: underline;
+}
+
+textarea {
+  width: 250px;
+}
+
+#clickToDial {
+  cursor: pointer;
+  color: blue;
+}
+
+.events {
+  margin: 10px;
+}
+
+.event {
+  margin: 10px;
+}
+
+.eventName {
+  text-decoration: underline;
+}
+
+.event > p {
+  margin-top: -15px;
+}
+
+.subscriptions {
+  margin: 10px;
+}
+
+.subscription {
+  margin: 10px;
+}
+
+.subscriptionName {
+  text-decoration: underline;
+}
+
+.subscription > p {
+  margin-top: -15px;
+}
+
+.callControl {
+  width: 100px;
+  overflow: hidden;
+}
+
+.views {
+  width: 100px;
+  overflow: hidden;
+}
+
+#updateAudioConfiguration {
+  margin-top: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
